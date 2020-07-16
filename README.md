@@ -32,11 +32,12 @@ A-xexF> python3 a-xex.py
    /____\   ___  \ /   | ____ /    \ /    
   /      \       / \   |           / \    
  /        \     /   \   \_____/   /   \   
-             A-xex 1.2 is up              
+             A-xex 1.3 is up              
  Author not responsible for malicious use! 
   Host Name:   Linux  kali  5.6.0-kali2-amd64 
   IP Address:  127.0.1.1 
   [OK]-Internet
+  [OK]-Version
 
   [0]-About/Help
   [1]-PortScanner
