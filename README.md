@@ -10,9 +10,9 @@
 # About A-xex Framework
 
 ```
-A-xex is a simple and intuitive tool, it joins many importants tools 
+A-xex is a simple and intuitive tool, it joins many important tools 
 that can help in a hack action. The goal is to provide a simple, 
-clear and organizated interface  but muth usual.
+clear and organized interface but much usual.
 ```
 
 ---
