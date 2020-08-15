@@ -32,7 +32,7 @@ def descoverdom():
 
     if c1 and c2 and c3 and c4 in cf:
         print("  Cloud Flare: True")
-        print("  Would you like to continue")
+        
     else:
         print("  No Cloud Flare")
 
