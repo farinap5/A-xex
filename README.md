@@ -1,6 +1,7 @@
 <h1 align="center">A-xex</h1>
 <p align="center">This project is part of a school work focusing on network security.</p>
 <p align="center">Author not responsable for malicious use.</p>
+<p align="center">The project is always updating</p>
 <p align="center"> 
    <img src="https://img.shields.io/badge/language-python-blue.svg">
 </p>
