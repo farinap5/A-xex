@@ -45,7 +45,7 @@ A-xexF> python3 a-xex.py
   [2]-E-Mail
   [3]-Servers
   [4]-Request Test
-  [5]-Directory Finder
+  [5]-Web Analysis
   [6]-Stress Testing
   [7]-PassWord
   [8]-A-xex Console
