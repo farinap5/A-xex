@@ -62,7 +62,12 @@ A-xexF> python3 a-xex.py
 Make many types of scans having IPs and domais 
 as target as also in the local network. 
 ```
+## Admin Panel, Directories and DNS Finder
 
+```
+Can be eazy to find directories vulnerable directories with a large WordList.
+Dns and admin panel finder also have dedicated word lists.
+```
 ## Servers
 
 ```
@@ -73,8 +78,9 @@ whithout prior knowledge.
 ## Web Analysis
 
 ```
-Maybe the most desenvolved and important module, 
-usefull, find any directory page and vulnerability scan.
+Maybe the most desenvolved and important module.
+the user can concentrate a lot of information about target, 
+spiders functions and ip recognition are embbed also.
 ```
 
 ## Stress Testing
