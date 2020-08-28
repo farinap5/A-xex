@@ -34,8 +34,8 @@ def hashkillr():
             break
 
 def hashkillw():
-
-    arq = "/home/faripy/apps/tools/rockyou.txt"
+    print("still in test - admin is the key, set your WordList")
+    arq = " "
     key = "21232f297a57a5a743894a0e4a801fc3"
     print("   Hash MD5 BruteForce")
     print("   Set Hash ")
