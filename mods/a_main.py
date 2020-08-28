@@ -1,4 +1,5 @@
 # All modules to be used across the program funcionalitys
+import os
 from mods import alogo
 from mods import ls
 from mods import ipdist
@@ -16,6 +17,7 @@ from mods import listener
 from mods import vuln
 from mods import descoverdom
 from mods import descoverip
+from mods import hashtool
 
 
 def a_main():
@@ -109,7 +111,9 @@ def a_main():
             if lsp == 1:
                 passtool.passgen()
             if lsp == 2:
-                print('soon')
+                hashtool.hashkillr()
+            if lsp == 3:
+                hashtool.hashkillw()
             else:
                 a_main()
 
@@ -125,9 +129,10 @@ def a_main():
                 listener.bindtcp()
             if lsc == 4:
                 listener.bindudp()
+            if lsc == 5:
+                console.payfac2()
             else:
                 a_main()
-
 
 
     except:

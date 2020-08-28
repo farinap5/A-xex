@@ -29,10 +29,10 @@ def strss():
     for frag in ls6:
         print(frag)
 def psstools():
-    ls7 = ['  [1]-Pass Generator','  [00]-Return']
+    ls7 = ['  [1]-Pass Generator','  [2]-Hash MD5 BruteForce Random','  [3]-Hash MD5 BruteForce','  [00]-Return']
     for frag in ls7:
         print (frag)
 def console():
-    ls8 = ['  [1]-Shell RSP','  [2]-Create RSP','  [3]-Bind TCP','  [4]-Bind UDP','  [00]-Return']
+    ls8 = ['  [1]-Shell RSP','  [2]-Create RSP','  [3]-Bind TCP','  [4]-Bind UDP','  [5]-Python Reverse Shell','  [00]-Return']
     for frag in ls8:
         print(frag)
