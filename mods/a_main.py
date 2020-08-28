@@ -90,6 +90,8 @@ def a_main():
                 descoverdom.descoverdom()
             if lsr == 6:
                 descoverip.domip()
+            if lsr == 7:
+                vuln.xssscan()
             else:
                 a_main()
 

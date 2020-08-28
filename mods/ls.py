@@ -20,7 +20,7 @@ def server():
         print(frag)
 
 def VulnWeb():
-    ls5 = ['  [1]-Dns Finder','  [2]-Directory Brute','  [3]-Spider','  [4]-SQLI Scan','  [5]-InfoGet Domain Scan','  [6]-InfoGet IP Scan','  [00]-Return']
+    ls5 = ['  [1]-Dns Finder','  [2]-Directory Brute','  [3]-Spider','  [4]-SQLI Scan','  [5]-InfoGet Domain Scan','  [6]-InfoGet IP Scan','  [7]-XSS URL Tester','  [00]-Return']
     for frag in ls5:
         print(frag)
 
