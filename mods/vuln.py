@@ -11,12 +11,11 @@ def sqliscan():
         print('  [\033[1;31m!\033[0;0m]- Something was wrong.')
         input('press enter')
         sqliscan()
-    #colocar essa barra na url para n acusar sendo uma aspa do codigo
+   
 
-    padrao = re.search(r'([\w:/\._-]+\?[\w_-]+=)([\w_-]+)',url)
-
-    inject = padrao.groups()[0] + '\''
-
+    urli = url.split("=")
+    urlii = urli[0] + "="
+    inject = urlii + "'"
     header = {'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) '
                             'AppleWebkit/537.36 (KHTML, like Gecko) '
                             'Chome/51.0.2704.103 Safai/537.36' }
