@@ -24,7 +24,7 @@ def cheknet():
 
 def checkv():
     try:
-        at_vesion = 1.3
+        at_vesion = 1.4
         url = "https://raw.githubusercontent.com/farinap5/A-xex/master/mods/version.txt"
 
         try:
